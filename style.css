@@ -77,6 +77,8 @@ nav li a:hover {
 }
 
 main {
+    display: grid;
+    grid-template: 1fr / 2fr 1fr; 
     width: 1024px;
     margin: 0 auto;
 }
@@ -100,12 +102,18 @@ about-me h2 {
 #hero {
     display: flex;
     align-items: center;
+    line-height: 1.3rem;
 }
 
 hero-content {
     display: flex;
     width: 1024px;
     margin: 0 auto;
+}
+
+about-me p {
+    margin-right: 4rem;
+    margin-bottom: 1rem;
 }
 
 photo-container {
@@ -121,6 +129,36 @@ photo-container img {
 #resume {
     margin: 4rem auto;
 }
+
+/* #sidebar-menu {
+    margin: 4rem auto;
+    padding: 0 2rem;
+} */
+
+/* #sidebar-menu menu {
+    margin: 4rem 4rem;
+    background-color:rgb(103, 78, 167);
+    border-radius: 0.2rem;
+}
+
+#sidebar-menu menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+#sidebar-menu menu li a:hover {
+    background-color: rgb(102, 102, 102);
+} */
+
+/* #sidebar-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+} */
 
 #resume h3 {
     font-size: 1.6rem;
@@ -144,8 +182,6 @@ resume-entry {
 resume-entry-description {
     display: block;
     margin: 0.5rem 0;
-    word-wrap: break-word;
-    width: 50rem;
 }
 
 resume-entry-description ul {
@@ -158,4 +194,17 @@ resume-entry-description li {
     font-size: 1rem;
     color: rgb(102, 102, 102);
     font-style: italic;
+}
+
+footer {
+    background-color: rgb(103, 78, 167);
+    color: #ffffff;
+    padding: 2rem auto;
+}
+
+footer-container {
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
