@@ -4,58 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>rodrigo pimentel | my resume</title>
 </head>
 <body>
     <header>
-        <h1>rodrigo pimentel</h1>
-        <p class="location">Riverside, RI 02915</p>
+        <nav>
+            <header-logo>
+                <h1>rodrigo pimentel</h1>
+                <p class="header">an undergraduate psychology <span class="highlight">researcher</span></p>
+                <p class="header"><span class="highlight">web developer</span>, and <span class="highlight">activist</span>.</p>
+            </header-logo>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">research</a></li>
+                <li><a href="">web dev</a></li>
+                <li><a href="">press</a></li>
+                <li class="active"><a href="">resume</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <h2>Education</h2>
-
-    <resume-entry>
-        <h3><strong>University of Rhode Island</strong> / Expected 2023</h3>
-        <p class="tagline">Bachelor of Arts, Data Science</p>
-        <p class="tagline">Bachelor of Arts, Psychology</p>
-        <p class="tagline">Cumulative GPA: 3.72 | Data Science (BA): 4.0 | Psychology (BA): 4.0</p>
-        <resume-entry-description>
-            <ul>
-                <li>Coursework: Quantitative Methods in Psychology, Research Methods/Design in Behavioral Sciences, Statistical Methods in Research I, Social Issues in Computing.</li>
-            </ul>
-        </resume-entry-description>
-    </resume-entry>
-
-    <h2>Experience</h2>
-
-    <resume-entry>
-        <h3><strong>Student Researcher</strong> / University of Rhode Island, Department of Psychology</h3>
-        <p class="tagline">Feb 2021 - Present, Rhode Island</p>
-        <resume-entry-description>
-            <ul>
-                <li>Lead student researcher on study pertaining to digital self harm by individuals who identify as transgender, responsible for study design, Institutional Review Board approval, and participant recruitment.</li>
-                <li>Secured $3,000 in funding for research and participant incentives.</li>
-            </ul>
-        </resume-entry-description>
-    </resume-entry>
-
-    <resume-entry>
-        <h3><strong>Editorial and Research Entry</strong> / Political Research Associates</h3>
-        <resume-entry-description>
-            <ul>
-                <li>Fact-checked articles for publication in “The Public Eye”, a peer-reviewed quarterly magazine. </li>
-                <li>Collected and analyzed data pertaining to the patriot/militia movement, findings were featured by Media Matters.</li>
-                <li>Developed open-source intelligence tools with Python to search social media.</li>
-            </ul>
-        </resume-entry-description>
-    </resume-entry>
-        <h3><strong>Media Consultant</strong> / Independent Consultant</h3>
-        <!-- <p>Conducted focus groups for the National Association for Latino Elected Officials’ report, “The Last Chance to Get it Right: Implications of the 2018 Test of the Census for Latinos and the General Public.” Garnered earned media coverage for the report in national outlets such as NPR.</p>
-        <p>Identified and mobilized supporters in the successful 2020 Get Out The Vote campaign for endorsed candidates by a local political action committee.</p> -->
-    <resume-entry>
-        <h3><strong>Policy Assistant</strong> / Latino Policy Institute at Roger Williams University</h3>
-    </resume-entry>
+    <section id="hero">
+        <hero-content>
+            <about-me>
+                <h2>this is me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corporis ea modi adipisci recusandae nemo asperiores pariatur esse veritatis quibusdam culpa labore blanditiis, voluptas aperiam quo odio. Quasi, in animi?</p>
+            </about-me>
+            <photo-container>
+                <img src="me.jpg" alt="">
+            </photo-container>
+        </hero-content>
+    </section>
+    <main>
+        <section id="resume">
+            <h2>resume</h2>
+            <h3>education</h3>
+            <resume-entry>
+                <h4><strong>University of Rhode Island</strong> / Expected 2023</h4>
+                <p class="tagline">Bachelor of Arts, Data Science</p>
+                <p class="tagline">Bachelor of Arts, Psychology</p>
+                <p class="tagline">Cumulative GPA: 3.72 | Data Science (BA): 4.0 | Psychology (BA): 4.0</p>
+                <resume-entry-description>
+                    <ul>
+                        <li>Coursework: Quantitative Methods in Psychology, Research Methods/Design in Behavioral Sciences, Statistical Methods in Research I, Social Issues in Computing.</li>
+                    </ul>
+                </resume-entry-description>
+            </resume-entry>
+        
+            <h3>experience</h3>
+        
+            <resume-entry>
+                <h4><strong>Student Researcher</strong> / University of Rhode Island, Department of Psychology</h4>
+                <p class="tagline">Feb 2021 - Present, Rhode Island</p>
+                <resume-entry-description>
+                    <ul>
+                        <li>Lead student researcher on study pertaining to digital self harm by individuals who identify as transgender, responsible for study design, Institutional Review Board approval, and participant recruitment.</li>
+                        <li>Secured $3,000 in funding for research and participant incentives.</li>
+                    </ul>
+                </resume-entry-description>
+            </resume-entry>
+        
+            <resume-entry>
+                <h4><strong>Editorial and Research Entry</strong> / Political Research Associates</h4>
+                <resume-entry-description>
+                    <ul>
+                        <li>Fact-checked articles for publication in “The Public Eye”, a peer-reviewed quarterly magazine. </li>
+                        <li>Collected and analyzed data pertaining to the patriot/militia movement, findings were featured by Media Matters.</li>
+                        <li>Developed open-source intelligence tools with Python to search social media.</li>
+                    </ul>
+                </resume-entry-description>
+            </resume-entry>
+                <h4><strong>Media Consultant</strong> / Independent Consultant</h4>
+                <resume-entry-description>
+                    <ul>
+                        <li>Conducted focus groups for the National Association for Latino Elected Officials’ report, “The Last Chance to Get it Right: Implications of the 2018 Test of the Census for Latinos and the General Public.” Garnered earned media coverage for the report in national outlets such as NPR.</li>
+                        <li>Identified and mobilized supporters in the successful 2020 Get Out The Vote campaign for endorsed candidates by a local political action committee.</li>
+                    </ul>
+                </resume-entry-description>
+        
+            <resume-entry>
+                <h4><strong>Policy Assistant</strong> / Latino Policy Institute at Roger Williams University</h4>
+                <resume-entry-description>
+                    <ul>
+                        <li>Led successful campaign to pass legislation protecting immigrant rights in the State of Rhode Island, allowing DACA recipients to remain eligible for a driver’s license, regardless of federal immigration policy.</li>
+                        <li>Researched immigration and Latinx issues, and communicated findings to the media.</li>
+                        <li>Developed messaging guidance in a fast-paced political landscape, garnered earned media in local and national outlets.</li>
+                    </ul>
+                </resume-entry-description>
+            </resume-entry>        
+        </section>
+    </main>
 </body>
 </html>
